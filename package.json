@@ -8,6 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --fix && prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "test:e2e": "playwright test",
+    "test:unit": "vitest",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\""
   },

@@ -161,6 +161,7 @@ export const Dropzone: FC<Props> = ({ file, status, error, onFileSelect, onClear
 
     return (
         <div
+            data-testid="dropzone"
             className={cn(styles.dropzone, {
                 [styles.dragActive]: isDragActive,
                 [styles.dragReject]: validationError,
